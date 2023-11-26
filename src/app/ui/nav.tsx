@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "@/app/ui/logo";
 import Link from "next/link";
 
+const email = "email@business.com";
+
 const pages = [
   { name: "About", href: "/about" },
   { name: "Work", href: "/projects" },
@@ -12,10 +14,10 @@ const pages = [
 
 export default function Nav() {
   return (
-    <nav className="flex items-center justify-between flex-wrap px-12 py-8">
-      <div className="flex items-center flex-shrink-0  mr-6">
+    <nav className="flex items-center px-12 py-8 bg-transparent">
+      <div className="flex items-center justify-between mr-6 flex-grow relative">
         <Logo />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           {pages.map((page) => (
             <NavItem key={page.name} {...page} />
           ))}
@@ -41,8 +43,10 @@ const NavItem: React.FC<NavItemProps> = ({ href, name }) => (
 );
 
 const Button = () => (
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Contact us
-    </button>
-    );
-
+  <Link
+    href={`mailto:${email}`}
+    className="inline-block px-5 py-3 ml-5 text-xs font-medium leading-none text-white uppercase bg-black hover:bg-gray-900"
+  >
+    Contact Us
+  </Link>
+);
