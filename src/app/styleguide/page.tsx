@@ -11,7 +11,7 @@ export default function Home() {
       <Container>
         <ContentWrapper>
           <Block>
-            <p>HEADINGS</p>
+            <Label>HEADINGS</Label>
             <HeadingJumbo>Heading Jumbo</HeadingJumbo>
             <HeadingJumbo size="small">Heading Jumbo</HeadingJumbo>
             <HeadingJumbo size="tiny">Heading Jumbo</HeadingJumbo>
@@ -25,7 +25,7 @@ export default function Home() {
           </Block>
           <Divider />
           <Block>
-            <p>PARAGRAPHS</p>
+            <Label>PARAGRAPHS</Label>
           </Block>
         </ContentWrapper>
       </Container>
@@ -37,10 +37,23 @@ type ContentWrapperProps = {
   children: React.ReactNode;
 };
 
+type LabelProps = {
+  children: string;
+};
+
 const ContentWrapper = ({ children }: ContentWrapperProps) => (
   <div className="text-center tablet:text-left">{children}</div>
 );
 
 const Block = ({ children }: ContentWrapperProps) => (
   <div className="my-80px">{children}</div>
+);
+
+const Label = ({ children }: LabelProps) => (
+  <div
+    className="uppercase mt-0 mb-25px font-medium text-p-xs leading-p-xs tracking-1px
+  "
+  >
+    {children}
+  </div>
 );
