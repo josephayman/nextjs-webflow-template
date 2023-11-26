@@ -36,7 +36,7 @@ type NavItemProps = {
 const NavItem: React.FC<NavItemProps> = ({ href, name }) => (
   <Link
     href={href}
-    className="block px-5 py-2 uppercase text-xs opacity-60 font-medium hover:opacity-100 transition-opacity"
+    className="block px-5 py-2 uppercase text-xs opacity-60 font-medium hover:opacity-100 transition-opacity tracking-wider"
   >
     {name}
   </Link>

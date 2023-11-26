@@ -21,6 +21,7 @@ const config: Config = {
         '15px': '15px',
         '20px': '20px',
         '30px': '30px',
+        '80px': '80px', 
       },
       fontSize: {
         'jumbo': '64px',
@@ -31,7 +32,7 @@ const config: Config = {
         'h3': '30px',
         'h4': '24px',
         'h5': '20px',
-        'h6': '16px',
+        'p': '16px',
       },
       lineHeight: {
         'jumbo': '80px',
@@ -42,7 +43,12 @@ const config: Config = {
         'h3': '46px',
         'h4': '38px',
         'h5': '34px',
-        'h6': '28px',
+        'p': '28px',
+      },
+      screens: {
+        'mobile': '478px',
+        'mobile-landscape': '767px',
+        'tablet': '991px',
       },
     },
   },

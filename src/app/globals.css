@@ -17,7 +17,10 @@
     @apply text-h5 leading-h5 my-10px font-medium;
   }
   h6 {
-    @apply text-h6 leading-h6 my-10px font-medium;
+    @apply text-p leading-p my-10px font-medium;
+  }
+  p {
+    @apply text-p leading-p mb-10px font-normal;
   }
 }
 
@@ -26,5 +29,5 @@
 
 
 body {
-  color: #1a1b1f;
+  @apply text-dark;
 }
