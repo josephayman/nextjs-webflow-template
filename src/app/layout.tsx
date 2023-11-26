@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Nav />
-        <div className="mx-8">{children}</div>
+        <div className="mx-30px">{children}</div>
       </body>
     </html>
   );
