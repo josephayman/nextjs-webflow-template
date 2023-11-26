@@ -25,7 +25,7 @@ export default function Home() {
           </Block>
           <Divider />
           <Block>
-            <Label>PARAGRAPHS</Label>
+            <Label>PARAGRAPHS & Links</Label>
           </Block>
         </ContentWrapper>
       </Container>
