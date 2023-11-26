@@ -14,8 +14,8 @@ const pages = [
 
 export default function Nav() {
   return (
-    <nav className="flex items-center px-12 py-8 bg-transparent">
-      <div className="flex items-center justify-between mr-6 flex-grow relative">
+    <nav className="flex items-center px-50px py-30px bg-transparent">
+      <div className="flex items-center justify-between flex-grow relative">
         <Logo />
         <div className="flex justify-center items-center ">
           {pages.map((page) => (
@@ -36,7 +36,7 @@ type NavItemProps = {
 const NavItem: React.FC<NavItemProps> = ({ href, name }) => (
   <Link
     href={href}
-    className="block px-5 py-2 uppercase text-xs opacity-60 font-medium hover:opacity-100 transition-opacity tracking-wider"
+    className="block px-20px py-9px uppercase text-p-xs leading-p-xs tracking-1px opacity-60 font-medium hover:opacity-100 transition-opacity"
   >
     {name}
   </Link>
@@ -45,7 +45,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, name }) => (
 const Button = () => (
   <Link
     href={`mailto:${email}`}
-    className="inline-block px-6 py-3 text-xs text-white uppercase bg-dark hover:bg-gray-900"
+    className="inline-block px-25px py-12px text-p-xs leading-p-xs tracking-2px text-white uppercase bg-dark hover:bg-gray-900"
   >
     Contact Us
   </Link>

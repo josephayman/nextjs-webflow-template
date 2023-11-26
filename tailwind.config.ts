@@ -16,12 +16,26 @@ const config: Config = {
         'header-md': '480px',
         'header-lg': '620px',
       },
-      margin: {
-        '10px': '10px', 
+      padding: {
+        '9px': '9px', 
+        '10px': '10px',
+        '12px': '12px', 
         '15px': '15px',
         '20px': '20px',
         '25px': '25px', 
         '30px': '30px',
+        '50px': '50px',
+        '80px': '80px', 
+      },
+      margin: {
+        '9px': '9px', 
+        '10px': '10px', 
+        '12px': '12px', 
+        '15px': '15px',
+        '20px': '20px',
+        '25px': '25px', 
+        '30px': '30px',
+        '50px': '50px',
         '80px': '80px', 
       },
       fontSize: {
@@ -52,6 +66,7 @@ const config: Config = {
       },
       letterSpacing: {
         '1px': '1px', 
+        '2px': '2px',
       },
       screens: {
         'mobile': '478px',
