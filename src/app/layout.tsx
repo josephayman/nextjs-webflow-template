@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { montserrat } from './ui/fonts'
 import './globals.css'
+import Nav from '@/app/ui/nav'
 
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <Nav />
+        {children}
+        </body>
     </html>
   )
 }
