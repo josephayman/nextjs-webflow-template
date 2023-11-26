@@ -16,6 +16,11 @@ const config: Config = {
       colors: {
         "dark": "#1a1b1f",
       },
+      height: {
+        'header-sm': '460px',
+        'header-md': '480px',
+        'header-lg': '620px',
+      },
     },
   },
   plugins: [],
