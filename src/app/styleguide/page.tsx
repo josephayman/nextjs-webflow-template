@@ -1,7 +1,7 @@
 import Container from "@/app/ui/container";
 import StyleguideHeader from "@/app/ui/headers/styleguide-header";
-import HeadingJumbo from "@/app/ui/headings/heading-jumbo";
-import Divider from "../ui/divider";
+import { HeadingJumbo, Paragraph, Label } from "@/app/ui/typography";
+import Divider from "@/app/ui/divider";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Container>
         <ContentWrapper>
           <Block>
-            <Label>HEADINGS</Label>
+            <Label spacing>HEADINGS</Label>
             <HeadingJumbo>Heading Jumbo</HeadingJumbo>
             <HeadingJumbo size="small">Heading Jumbo</HeadingJumbo>
             <HeadingJumbo size="tiny">Heading Jumbo</HeadingJumbo>
@@ -25,7 +25,12 @@ export default function Home() {
           </Block>
           <Divider />
           <Block>
-            <Label>PARAGRAPHS & Links</Label>
+            <Label spacing>PARAGRAPHS & Links</Label>
+            <Paragraph size="big">Paragraph-bigger</Paragraph>
+            <Paragraph>Paragraph</Paragraph>
+            <Paragraph color="light">Paragraph-de-emphasized</Paragraph>
+            <Paragraph size="small">Paragraph-smaller</Paragraph>
+            <Paragraph size="tiny">Paragraph-tiny</Paragraph>
           </Block>
         </ContentWrapper>
       </Container>
@@ -37,23 +42,10 @@ type ContentWrapperProps = {
   children: React.ReactNode;
 };
 
-type LabelProps = {
-  children: string;
-};
-
 const ContentWrapper = ({ children }: ContentWrapperProps) => (
   <div className="text-center tablet:text-left">{children}</div>
 );
 
 const Block = ({ children }: ContentWrapperProps) => (
   <div className="my-80px">{children}</div>
-);
-
-const Label = ({ children }: LabelProps) => (
-  <div
-    className="uppercase mt-0 mb-25px font-medium text-p-xs leading-p-xs tracking-1px
-  "
-  >
-    {children}
-  </div>
 );

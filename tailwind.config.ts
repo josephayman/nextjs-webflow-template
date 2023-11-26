@@ -32,7 +32,7 @@ const config: Config = {
         'h2': '36px',
         'h3': '30px',
         'h4': '24px',
-        'h5': '20px',
+        'h5': '20px', 
         'p': '16px',
         'p-sm': '14px',
         'p-xs': '12px',

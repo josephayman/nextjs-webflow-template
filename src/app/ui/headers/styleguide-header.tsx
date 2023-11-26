@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingJumbo from "@/app/ui/headings/heading-jumbo";
+import HeadingJumbo from "@/app/ui/typography/heading-jumbo";
 
 export default function StyleguideHeader() {
   return (
