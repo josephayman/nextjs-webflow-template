@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      }, 
       colors: {
         "dark": "#1a1b1f",
       },
@@ -20,6 +15,34 @@ const config: Config = {
         'header-sm': '460px',
         'header-md': '480px',
         'header-lg': '620px',
+      },
+      margin: {
+        '10px': '10px', 
+        '15px': '15px',
+        '20px': '20px',
+        '30px': '30px',
+      },
+      fontSize: {
+        'jumbo': '64px',
+        'jumbo-md': '36px',
+        'jumbo-sm': '18px',
+        'h1': '44px',
+        'h2': '36px',
+        'h3': '30px',
+        'h4': '24px',
+        'h5': '20px',
+        'h6': '16px',
+      },
+      lineHeight: {
+        'jumbo': '80px',
+        'jumbo-md': '50px',
+        'jumbo-sm': '32px',
+        'h1': '62px',
+        'h2': '50px',
+        'h3': '46px',
+        'h4': '38px',
+        'h5': '34px',
+        'h6': '28px',
       },
     },
   },

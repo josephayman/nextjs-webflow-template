@@ -10,9 +10,9 @@ type HeadingJumboProps = {
 export default function HeadingJumbo({ children, color="black", size="normal" }: HeadingJumboProps) {
   return (
     <div className= {clsx(
-        size === "normal" && "text-6xl capitalize my-3",
-        size === "small" && "text-4xl capitalize mt-3 mb-4",
-        size === "tiny" && "text-lg uppercase mt-2 mb-3",
+        size === "normal" && "text-jumbo leading-jumbo capitalize my-10px",
+        size === "small" && "text-jumbo-md leading-jumbo-md capitalize mt-10px mb-15px",
+        size === "tiny" && "text-jumbo-sm leading-jumbo-sm uppercase my-10px",
         color === "white" && "text-white"
         )}>
       {children}
