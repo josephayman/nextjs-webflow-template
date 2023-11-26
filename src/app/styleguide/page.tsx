@@ -28,7 +28,9 @@ export default function Home() {
             <Label spacing>PARAGRAPHS & Links</Label>
             <Paragraph size="big">Paragraph-bigger</Paragraph>
             <Paragraph>Paragraph</Paragraph>
-            <Paragraph color="light">Paragraph-de-emphasized</Paragraph>
+            <Paragraph opacity="de-emphasized">
+              Paragraph-de-emphasized
+            </Paragraph>
             <Paragraph size="small">Paragraph-smaller</Paragraph>
             <Paragraph size="tiny">Paragraph-tiny</Paragraph>
           </Block>
