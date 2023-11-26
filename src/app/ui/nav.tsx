@@ -45,7 +45,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, name }) => (
 const Button = () => (
   <Link
     href={`mailto:${email}`}
-    className="inline-block px-6 py-3 text-xs text-white uppercase bg-black hover:bg-gray-900"
+    className="inline-block px-6 py-3 text-xs text-white uppercase bg-dark hover:bg-gray-900"
   >
     Contact Us
   </Link>
