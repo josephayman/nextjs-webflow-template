@@ -27,6 +27,7 @@ const config: Config = {
         "25px": "25px",
         "30px": "30px",
         "35px": "35px",
+        "40px": "40px",
         "50px": "50px",
         "80px": "80px",
         "100px": "100px",
@@ -41,6 +42,7 @@ const config: Config = {
         "25px": "25px",
         "30px": "30px",
         "35px": "35px",
+        "40px": "40px",
         "50px": "50px",
         "80px": "80px",
         "100px": "100px",
@@ -87,6 +89,9 @@ const config: Config = {
       width: {
         "70%": "70%",
         "90%": "90%",
+      },
+      borderWidth: {
+        "5px": "5px",
       },
     },
   },

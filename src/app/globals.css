@@ -25,6 +25,15 @@
   a {
     @apply underline;
   }
+  blockquote {
+    @apply text-h5 leading-h5 my-25px font-normal px-30px py-15px border-l-5px;
+  }
+  ul {
+    @apply list-disc list-inside mt-20px mb-10px pl-40px;
+  }
+  li {
+    @apply text-p leading-p mb-10px font-normal;
+  }
 }
 
 @tailwind components;
