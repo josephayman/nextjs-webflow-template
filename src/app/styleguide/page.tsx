@@ -4,6 +4,7 @@ import { HeadingJumbo, Paragraph, Label, RichText } from "@/app/ui/typography";
 import Divider from "@/app/ui/divider";
 import Link from "next/link";
 import Button from "../ui/buttons";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -73,7 +74,13 @@ export default function Home() {
                 the settings panel. Voila!
               </Paragraph>
               <FigureWrapper>
-                <img src="./placeholder1.svg" />
+                {/* <img src="./placeholder1.svg"  /> */}
+                <Image
+                  src="./placeholder1.svg"
+                  alt="placeholder"
+                  width={800}
+                  height={510}
+                />
               </FigureWrapper>
               <h4>How to customize formatting for each rich text</h4>
               <Paragraph opacity="de-emphasized">
