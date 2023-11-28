@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "@/app/ui/logo";
 import Link from "next/link";
+import Button from "./buttons";
 
 const email = "email@business.com";
 
@@ -22,7 +23,7 @@ export default function Nav() {
             <NavItem key={page.name} {...page} />
           ))}
         </div>
-        <Button />
+        <Button href={`mailto:${email}`} text="Contact us" />
       </div>
     </nav>
   );
@@ -36,17 +37,8 @@ type NavItemProps = {
 const NavItem: React.FC<NavItemProps> = ({ href, name }) => (
   <Link
     href={href}
-    className="block px-20px py-9px uppercase text-p-xs leading-p-xs tracking-1px opacity-60 font-medium hover:opacity-100 transition-opacity"
+    className="block px-20px py-9px uppercase text-p-xs leading-p-xs tracking-1px opacity-60 font-medium no-underline hover:opacity-100 transition-opacity"
   >
     {name}
-  </Link>
-);
-
-const Button = () => (
-  <Link
-    href={`mailto:${email}`}
-    className="inline-block px-25px py-12px text-p-xs leading-p-xs tracking-2px text-white uppercase bg-dark hover:bg-gray-900"
-  >
-    Contact Us
   </Link>
 );
