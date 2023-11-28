@@ -58,6 +58,42 @@ export default function Home() {
                 instead of having to add and format them individually. Just
                 double-click and easily create content.
               </Paragraph>
+              <blockquote>
+                The rich text element allows you to create and format headings,
+                paragraphs, blockquotes, images, and video all in one place
+                instead of having to add and format them individually. Just
+                double-click and easily create content.
+              </blockquote>
+              <h4>Static and dynamic content editing</h4>
+              <Paragraph opacity="de-emphasized">
+                A rich text element can be used with static or dynamic content.
+                For static content, just drop it into any page and begin
+                editing. For dynamic content, add a rich text field to any
+                collection and then connect a rich text element to that field in
+                the settings panel. Voila!
+              </Paragraph>
+              <FigureWrapper>
+                <img src="./placeholder1.svg" />
+              </FigureWrapper>
+              <h4>How to customize formatting for each rich text</h4>
+              <Paragraph opacity="de-emphasized">
+                Headings, paragraphs, blockquotes, figures, images, and figure
+                captions can all be styled after a class is added to the rich
+                text element using the &quot;When inside of&quot; nested selector system.
+              </Paragraph>
+              <ul>
+                <li>
+                  The rich text element allows you to create and format headings
+                </li>
+                <li>
+                  Headings, paragraphs, blockquotes, figures, images, and figure
+                  captions
+                </li>
+                <li>
+                  A rich text element can be used with static or dynamic
+                  content.
+                </li>
+              </ul>
             </RichText>
           </Block>
         </ContentWrapper>
@@ -80,4 +116,8 @@ const Block = ({ children }: ContentWrapperProps) => (
 
 const ButtonWrapper = ({ children }: ContentWrapperProps) => (
   <div className="my-10px">{children}</div>
+);
+
+const FigureWrapper = ({ children }: ContentWrapperProps) => (
+  <div className="mt-25px mb-10px pb-40px">{children}</div>
 );
