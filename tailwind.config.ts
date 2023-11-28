@@ -29,6 +29,7 @@ const config: Config = {
         '35px': '35px',
         '50px': '50px',
         '80px': '80px', 
+        "100px": "100px",
       },
       margin: {
         '9px': '9px', 
@@ -41,7 +42,8 @@ const config: Config = {
         '30px': '30px',
         '35px': '35px',
         '50px': '50px',
-        '80px': '80px', 
+        '80px': '80px',
+        "100px": "100px",
       },
       fontSize: {
         'jumbo': '64px',
@@ -79,7 +81,12 @@ const config: Config = {
         'tablet': '991px',
       },
       maxWidth: {
+        "470px": "470px",
         "1140px": "1140px",
+      },
+      width: {
+        "70%": "70%",
+        "90%": "90%",
       },
     },
   },

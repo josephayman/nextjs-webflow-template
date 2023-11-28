@@ -1,6 +1,6 @@
 import Container from "@/app/ui/container";
 import StyleguideHeader from "@/app/ui/headers/styleguide-header";
-import { HeadingJumbo, Paragraph, Label } from "@/app/ui/typography";
+import { HeadingJumbo, Paragraph, Label, RichText } from "@/app/ui/typography";
 import Divider from "@/app/ui/divider";
 import Link from "next/link";
 import Button from "../ui/buttons";
@@ -50,6 +50,15 @@ export default function Home() {
           <Divider />
           <Block>
             <Label spacing>Rich text Element</Label>
+            <RichText>
+              <h2>What’s a Rich Text element?</h2>
+              <Paragraph opacity="de-emphasized">
+                The rich text element allows you to create and format headings,
+                paragraphs, blockquotes, images, and video all in one place
+                instead of having to add and format them individually. Just
+                double-click and easily create content.
+              </Paragraph>
+            </RichText>
           </Block>
         </ContentWrapper>
       </Container>
