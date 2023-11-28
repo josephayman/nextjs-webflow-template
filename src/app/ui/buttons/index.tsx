@@ -4,37 +4,35 @@ import clsx from "clsx";
 
 type ButtonProps = {
   href?: string;
-  text: string;
+  children?: React.ReactNode;
   big?: boolean;
+  color?: "white" | "black";
 };
 
-export default function Button({ href, text, big = false }: ButtonProps) {
+export default function Button({
+  href,
+  children,
+  big = false,
+  color = "black",
+}: ButtonProps) {
   if (!href) {
-    return (
-      <button
-        className={clsx(
-          "select-none tracking-2px text-white uppercase no-underline bg-dark hover:bg-dark-gray",
-          big
-            ? "px-35px py-16px text-p-xs leading-p-xs"
-            : "px-25px py-12px text-p-xs leading-p-xs"
-        )}
-      >
-        {text}
-      </button>
-    );
+    return <button>{children}</button>;
   }
 
   return (
     <Link
       href={href}
       className={clsx(
-        "select-none tracking-2px text-white uppercase no-underline bg-dark hover:bg-dark-gray",
+        "select-none tracking-2p uppercase no-underline",
         big
           ? "px-35px py-16px text-p-xs leading-p-xs"
-          : "px-25px py-12px text-p-xs leading-p-xs"
+          : "px-25px py-12px text-p-xs leading-p-xs",
+        color === "white"
+          ? "bg-white text-dark hover:bg-slate-50"
+          : "bg-dark text-white hover:bg-dark-gray"
       )}
     >
-      {text}
+      {children}
     </Link>
   );
 }

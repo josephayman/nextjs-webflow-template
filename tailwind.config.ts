@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/portfolio2-wide.svg')",
+      },
       colors: {
         dark: "#1a1b1f",
         "dark-gray": "#32343a",
@@ -88,6 +91,7 @@ const config: Config = {
       },
       width: {
         "70%": "70%",
+        "80%": "80%",
         "90%": "90%",
       },
       borderWidth: {
