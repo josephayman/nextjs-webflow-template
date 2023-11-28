@@ -42,10 +42,10 @@ export default function Home() {
           <Block>
             <Label spacing>Buttons & Form elements</Label>
             <ButtonWrapper>
-              <Button text="Explore" />
+              <Button>Explore</Button>
             </ButtonWrapper>
             <ButtonWrapper>
-              <Button text="Explore" big />
+              <Button big>Explore</Button>
             </ButtonWrapper>
           </Block>
           <Divider />
@@ -86,7 +86,8 @@ export default function Home() {
               <Paragraph opacity="de-emphasized">
                 Headings, paragraphs, blockquotes, figures, images, and figure
                 captions can all be styled after a class is added to the rich
-                text element using the &quot;When inside of&quot; nested selector system.
+                text element using the &quot;When inside of&quot; nested
+                selector system.
               </Paragraph>
               <ul>
                 <li>

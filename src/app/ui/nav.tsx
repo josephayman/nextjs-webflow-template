@@ -23,7 +23,7 @@ export default function Nav() {
             <NavItem key={page.name} {...page} />
           ))}
         </div>
-        <Button href={`mailto:${email}`} text="Contact us" />
+        <Button href={`mailto:${email}`}>Contact Us</Button>
       </div>
     </nav>
   );
