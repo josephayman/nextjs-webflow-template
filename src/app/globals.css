@@ -22,6 +22,9 @@
   p {
     @apply text-p leading-p mb-10px font-normal;
   }
+  a {
+    @apply underline;
+  }
 }
 
 @tailwind components;

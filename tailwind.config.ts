@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "dark": "#1a1b1f",
+        "dark-gray": "#32343a",
       },
       height: {
         'header-sm': '460px',
@@ -21,9 +22,11 @@ const config: Config = {
         '10px': '10px',
         '12px': '12px', 
         '15px': '15px',
+        '16px': '16px', 
         '20px': '20px',
         '25px': '25px', 
         '30px': '30px',
+        '35px': '35px',
         '50px': '50px',
         '80px': '80px', 
       },
@@ -32,9 +35,11 @@ const config: Config = {
         '10px': '10px', 
         '12px': '12px', 
         '15px': '15px',
+        '16px': '16px',
         '20px': '20px',
         '25px': '25px', 
         '30px': '30px',
+        '35px': '35px',
         '50px': '50px',
         '80px': '80px', 
       },
@@ -72,6 +77,9 @@ const config: Config = {
         'mobile': '478px',
         'mobile-landscape': '767px',
         'tablet': '991px',
+      },
+      maxWidth: {
+        "1140px": "1140px",
       },
     },
   },
