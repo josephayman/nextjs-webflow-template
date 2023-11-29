@@ -2,7 +2,7 @@ import React from 'react'
 import clsx from 'clsx'
 
 type ParagraphProps = {
-    children: string;
+    children: React.ReactNode;
     color?: "black" | "white";
     size?: "tiny" | "small" | "normal" | "big";
     opacity?: "normal" | "de-emphasized";

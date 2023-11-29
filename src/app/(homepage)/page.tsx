@@ -2,7 +2,7 @@ import IntroHeader from "@/app/ui/headers/intro-header";
 import Container from "@/app/ui/container";
 import { HeadingJumbo, Label, Paragraph } from "@/app/ui/typography";
 import Divider from "@/app/ui/divider";
-import Button from "./ui/buttons";
+import Button from "../ui/buttons";
 import Image from "next/image";
 
 export default function Home() {
