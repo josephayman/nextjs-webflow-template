@@ -20,18 +20,22 @@ export default function Home() {
         <Divider />
         <HomeContentWrapper>
           <AboutGrid>
-            <div className="col-span-1">
-              <Label opacity="de-emphasized">About</Label>
-              <h2>Who we are</h2>
-              <Paragraph opacity="de-emphasized">
-                Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor
-                venenatis feugiat. Etiam quis faucibus erat, non accumsan leo.
-                Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras
-                ullamcorper gravida tellus ut consequat.
-              </Paragraph>
-              <Button big href="/about">Learn More</Button>
+            <div>
+              <HomeSectionWrap>
+                <Label opacity="de-emphasized">About</Label>
+                <h2>Who we are</h2>
+                <Paragraph opacity="de-emphasized">
+                  Nulla vel sodales tellus, quis condimentum enim. Nunc
+                  porttitor venenatis feugiat. Etiam quis faucibus erat, non
+                  accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus
+                  eros. Cras ullamcorper gravida tellus ut consequat.
+                </Paragraph>
+              </HomeSectionWrap>
+              <Button big href="/about">
+                Learn More
+              </Button>
             </div>
-            <div className="col-span-2">
+            <div>
               <Image
                 src="/placeholder3.svg"
                 alt="Placeholder"
@@ -59,5 +63,11 @@ const HomeContentWrapper = ({ children }: MottoWrapperProps) => (
 );
 
 const AboutGrid = ({ children }: MottoWrapperProps) => (
-  <div className="grid grid-flow-col gap-x-20 gap-y-10">{children}</div>
+  <div className="grid grid-cols-[1fr_2fr] gap-x-20 gap-y-10 items-center">
+    {children}
+  </div>
+);
+
+const HomeSectionWrap = ({ children }: MottoWrapperProps) => (
+  <div className="mb-30px">{children}</div>
 );
