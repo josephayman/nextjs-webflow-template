@@ -23,7 +23,7 @@ export default function Button({
     <Link
       href={href}
       className={clsx(
-        "select-none tracking-2p uppercase no-underline",
+        "select-none tracking-2px uppercase no-underline",
         big
           ? "px-35px py-16px text-p-xs leading-p-xs"
           : "px-25px py-12px text-p-xs leading-p-xs",

@@ -74,7 +74,6 @@ export default function Home() {
                 the settings panel. Voila!
               </Paragraph>
               <FigureWrapper>
-                {/* <img src="./placeholder1.svg"  /> */}
                 <Image
                   src="./placeholder1.svg"
                   alt="placeholder"
