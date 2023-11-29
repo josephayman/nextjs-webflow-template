@@ -33,7 +33,9 @@ const config: Config = {
         "40px": "40px",
         "50px": "50px",
         "80px": "80px",
+        "85px": "85px",
         "100px": "100px",
+        "120px": "120px",
       },
       margin: {
         "9px": "9px",
@@ -48,7 +50,9 @@ const config: Config = {
         "40px": "40px",
         "50px": "50px",
         "80px": "80px",
+        "85px": "85px",
         "100px": "100px",
+        "120px": "120px",
       },
       fontSize: {
         jumbo: "64px",
