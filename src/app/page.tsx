@@ -3,6 +3,7 @@ import Container from "@/app/ui/container";
 import { HeadingJumbo, Label, Paragraph } from "@/app/ui/typography";
 import Divider from "@/app/ui/divider";
 import Button from "./ui/buttons";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <Divider />
         <HomeContentWrapper>
           <AboutGrid>
-            <div>
+            <div className="col-span-1">
               <Label opacity="de-emphasized">About</Label>
               <h2>Who we are</h2>
               <Paragraph opacity="de-emphasized">
@@ -29,6 +30,14 @@ export default function Home() {
                 ullamcorper gravida tellus ut consequat.
               </Paragraph>
               <Button big href="/about">Learn More</Button>
+            </div>
+            <div className="col-span-2">
+              <Image
+                src="/placeholder3.svg"
+                alt="Placeholder"
+                width={710}
+                height={460}
+              />
             </div>
           </AboutGrid>
         </HomeContentWrapper>
@@ -50,5 +59,5 @@ const HomeContentWrapper = ({ children }: MottoWrapperProps) => (
 );
 
 const AboutGrid = ({ children }: MottoWrapperProps) => (
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-50px">{children}</div>
+  <div className="grid grid-flow-col gap-x-20 gap-y-10">{children}</div>
 );
