@@ -23,7 +23,7 @@ export default function Home() {
             <div>
               <HomeSectionWrap>
                 <Label opacity="de-emphasized">About</Label>
-                <h2>Who we are</h2>
+                <h2 className="mb-20px">Who we are</h2>
                 <Paragraph opacity="de-emphasized">
                   Nulla vel sodales tellus, quis condimentum enim. Nunc
                   porttitor venenatis feugiat. Etiam quis faucibus erat, non
@@ -31,7 +31,7 @@ export default function Home() {
                   eros. Cras ullamcorper gravida tellus ut consequat.
                 </Paragraph>
               </HomeSectionWrap>
-              <Button big href="/about">
+              <Button href="/about">
                 Learn More
               </Button>
             </div>
@@ -39,8 +39,8 @@ export default function Home() {
               <Image
                 src="/placeholder3.svg"
                 alt="Placeholder"
-                width={710}
-                height={460}
+                width={1305}
+                height={833}
               />
             </div>
           </AboutGrid>
@@ -63,7 +63,7 @@ const HomeContentWrapper = ({ children }: MottoWrapperProps) => (
 );
 
 const AboutGrid = ({ children }: MottoWrapperProps) => (
-  <div className="grid grid-cols-[1fr_2fr] gap-x-20 gap-y-10 items-center">
+  <div className="grid tablet:text-left tablet:grid-cols-[1fr_2fr] gap-x-20 gap-y-10 items-center justify-stretch text-center">
     {children}
   </div>
 );
